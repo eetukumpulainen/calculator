@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="312.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Laskin.FXMLController">
+   <center>
+      <GridPane hgap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="196.0" vgap="2.0" BorderPane.alignment="BOTTOM_LEFT">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button7" onAction="#seven" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="7" GridPane.rowIndex="2" />
+            <Button fx:id="button9" onAction="#nine" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="equals" onAction="#equals" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="button0" onAction="#zero" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="button8" onAction="#eight" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="clear" onAction="#clearScreen" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="CLEAR" GridPane.rowIndex="3" />
+            <Button fx:id="button2" onAction="#two" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="2" GridPane.columnIndex="1" />
+            <Button fx:id="button1" onAction="#one" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="1" />
+            <Button fx:id="button3" onAction="#three" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="3" GridPane.columnIndex="2" />
+            <Button fx:id="button4" onAction="#four" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="4" GridPane.rowIndex="1" />
+            <Button fx:id="button5" onAction="#five" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="button6" onAction="#six" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <right>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="BOTTOM_RIGHT">
+         <children>
+            <Button fx:id="plus" onAction="#plus" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="+" />
+            <Button fx:id="minus" onAction="#minus" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="-" />
+            <Button fx:id="multiply" onAction="#multiply" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="*" />
+            <Button fx:id="divide" onAction="#divide" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="/" />
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <Label fx:id="screen" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="36.0" prefWidth="312.0" BorderPane.alignment="CENTER_RIGHT">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>
